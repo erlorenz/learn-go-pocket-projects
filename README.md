@@ -13,3 +13,8 @@ Walking through the projects of Learn Go with Pocket-Sized Projects MEAP
 - switch and map vs if
 
 2. A log story
+
+- libraries
+- iota
+- New() method on struct
+- logging
