@@ -1,13 +1,21 @@
 package main
 
-import "fmt"
+import (
+	"flag"
+	"fmt"
+)
 
 func main() {
-	greeting := greet("en")
+
+	var lang string
+	flag.StringVar(&lang, "lang", "en", "The code of the language to be used, e.g. en")
+	flag.Parse()
+
+	greeting := greet(language(lang))
 	fmt.Println(greeting)
 }
 
-// language representst the language's code
+// language represents the language's code
 type language string
 
 // Phrasebook holds greeting for each language
