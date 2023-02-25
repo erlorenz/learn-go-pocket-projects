@@ -33,7 +33,7 @@ func (l *Logger) Debugf(format string, args ...any) {
 		return
 	}
 
-	l.logf(format, args...)
+	l.logf(format)
 }
 
 // Infof formats and prints a message if the log level is info or higher.
@@ -47,7 +47,7 @@ func (l *Logger) Infof(format string, args ...any) {
 		return
 	}
 
-	l.logf(format, args...)
+	l.logf(format)
 }
 
 // Errorf formats and prints a message if the log level is error or higher.
